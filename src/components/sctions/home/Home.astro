@@ -1,0 +1,28 @@
+---
+import "@/styles/Home.css";
+
+import { basics } from "@cv";
+
+const { name, label, summary, image } = basics;
+---
+
+<section class="section home active" id="home">
+  <div class="home-container padd-15">
+    <div class="row">
+      <div class="home-info">
+        <h3 class="hello">
+          Hola, mi nombre es <span class="nane">{name}</span>
+        </h3>
+        <h3 class="my-profession">
+          Soy <span class="typing">{label}</span>
+        </h3>
+        <p>{summary}</p>
+        <a href="/#about" class="btn hire-me">Mas sobre mi</a>
+      </div>
+      <div class="home-img padd-15">
+        <span class="h-i"></span>
+        <img src={image} alt="" />
+      </div>
+    </div>
+  </div>
+</section>
